@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Avatars">2ba36b784ff1f3003d60b1d18110c7d9</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin-eduque</sys_created_by>
+        <sys_created_on>2019-05-31 15:19:45</sys_created_on>
+        <sys_id>7486633c4ff1f3003d60b1d18110c703</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ScriptableRESTMessageClient.execute</sys_name>
+        <sys_package display_value="Avatars" source="x_snc_avatars">2ba36b784ff1f3003d60b1d18110c7d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Avatars">2ba36b784ff1f3003d60b1d18110c7d9</sys_scope>
+        <sys_update_name>sys_scope_privilege_7486633c4ff1f3003d60b1d18110c703</sys_update_name>
+        <sys_updated_by>admin-eduque</sys_updated_by>
+        <sys_updated_on>2019-05-31 15:19:45</sys_updated_on>
+        <target_name>ScriptableRESTMessageClient.execute</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>
