@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Generate Avatars</name>
+        <run_as display_value="Earl Duque">10b0d0d34f597b004b00cfa18110c71f</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-05-31 17:16:27</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[//For all? Even if they already have an avatar
+var all_users = false;
+//By Sys_id (Seed) or Completely Random?
+var method = 'sys_id';
+
+var generate_avatars_gr = new GlideRecord('sys_user');
+generate_avatars_gr.orderBy('user_name');
+generate_avatars_gr.query();
+while(generate_avatars_gr.next()){
+	if (generate_avatars_gr.getDisplayValue('photo')){
+		if (all_users) generateAvatar(generate_avatars_gr.getUniqueValue());
+		else continue;
+	} else generateAvatar(generate_avatars_gr.getUniqueValue());
+}
+
+function generateAvatar(sys_id){
+	if (method == 'random') var get_random_avatar = new x_snc_avatars.Avatar().getRandom(sys_id);
+	else var get_avatar = new x_snc_avatars.Avatar().get(sys_id);
+	gs.info('Avatar generated for ' + sys_id);
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin-eduque</sys_created_by>
+        <sys_created_on>2019-05-31 17:25:14</sys_created_on>
+        <sys_id>5e310c414f75f3003d60b1d18110c705</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Generate Avatars</sys_name>
+        <sys_package display_value="Avatars" source="x_snc_avatars">2ba36b784ff1f3003d60b1d18110c7d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Avatars">2ba36b784ff1f3003d60b1d18110c7d9</sys_scope>
+        <sys_update_name>sysauto_script_5e310c414f75f3003d60b1d18110c705</sys_update_name>
+        <sys_updated_by>admin-eduque</sys_updated_by>
+        <sys_updated_on>2019-05-31 17:28:15</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

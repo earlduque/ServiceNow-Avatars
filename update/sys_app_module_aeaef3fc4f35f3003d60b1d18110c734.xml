@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="System UI">74596e487f000001003872027bb418bb</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint>Specify the properties for the Avatars application</hint>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Avatar Properties</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>499</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>system_properties_ui.do?sysparm_title=Avatar Properties&amp;sysparm_category=Avatar Properties</query>
+        <report/>
+        <roles>user_admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin-eduque</sys_created_by>
+        <sys_created_on>2019-05-31 17:06:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aeaef3fc4f35f3003d60b1d18110c734</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Avatar Properties</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Avatars" source="x_snc_avatars">2ba36b784ff1f3003d60b1d18110c7d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Avatars">2ba36b784ff1f3003d60b1d18110c7d9</sys_scope>
+        <sys_update_name>sys_app_module_aeaef3fc4f35f3003d60b1d18110c734</sys_update_name>
+        <sys_updated_by>admin-eduque</sys_updated_by>
+        <sys_updated_on>2019-05-31 17:06:44</sys_updated_on>
+        <timeline_page/>
+        <title>Avatar Properties</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

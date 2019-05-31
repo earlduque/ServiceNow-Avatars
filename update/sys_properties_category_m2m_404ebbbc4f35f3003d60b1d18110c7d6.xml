@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Avatar Properties">681e3bbc4f35f3003d60b1d18110c75c</category>
+        <order>500</order>
+        <property display_value="x_snc_avatars.avatars.generate_on_insert.seed_or_random" name="x_snc_avatars.avatars.generate_on_insert.seed_or_random">4fedbf7c4f35f3003d60b1d18110c7fc</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin-eduque</sys_created_by>
+        <sys_created_on>2019-05-31 17:03:28</sys_created_on>
+        <sys_id>404ebbbc4f35f3003d60b1d18110c7d6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_snc_avatars.avatars.generate_on_insert.seed_or_random.Avatar Properties</sys_name>
+        <sys_package display_value="Avatars" source="x_snc_avatars">2ba36b784ff1f3003d60b1d18110c7d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Avatars">2ba36b784ff1f3003d60b1d18110c7d9</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_404ebbbc4f35f3003d60b1d18110c7d6</sys_update_name>
+        <sys_updated_by>admin-eduque</sys_updated_by>
+        <sys_updated_on>2019-05-31 17:09:33</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>
