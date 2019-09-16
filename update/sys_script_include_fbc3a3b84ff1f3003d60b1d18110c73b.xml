@@ -60,6 +60,7 @@ Avatar.prototype = {
 		var rm = new sn_ws.RESTMessageV2();
 		rm.setHttpMethod('GET');
 		rm.setLogLevel('All');
+		rm.setRequestHeader('User-Agent', 'ServiceNow');
 		rm.setEndpoint('https://avatars.dicebear.com/v2/' + sprite + '/' + sys_id + '.svg');
 		rm.saveResponseBodyAsAttachment('sys_user',sys_id,'photo');
 		var response = rm.execute();
@@ -93,6 +94,7 @@ Avatar.prototype = {
 		var rm = new sn_ws.RESTMessageV2();
 		rm.setHttpMethod('GET');
 		rm.setLogLevel('All');
+		rm.setRequestHeader('User-Agent', 'ServiceNow');
 		rm.setEndpoint('https://avatars.dicebear.com/v2/' + instance_sprites[random_sprite] + '/' + Math.random().toString(36).slice(2) + '.svg');
 		rm.saveResponseBodyAsAttachment('sys_user',sys_id,'photo');
 		var response = rm.execute();
@@ -110,13 +112,13 @@ Avatar.prototype = {
         <sys_created_by>admin-eduque</sys_created_by>
         <sys_created_on>2019-05-31 15:08:44</sys_created_on>
         <sys_id>fbc3a3b84ff1f3003d60b1d18110c73b</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Avatar</sys_name>
         <sys_package display_value="Avatars" source="x_snc_avatars">2ba36b784ff1f3003d60b1d18110c7d9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Avatars">2ba36b784ff1f3003d60b1d18110c7d9</sys_scope>
         <sys_update_name>sys_script_include_fbc3a3b84ff1f3003d60b1d18110c73b</sys_update_name>
         <sys_updated_by>admin-eduque</sys_updated_by>
-        <sys_updated_on>2019-05-31 17:33:15</sys_updated_on>
+        <sys_updated_on>2019-09-16 19:05:14</sys_updated_on>
     </sys_script_include>
 </record_update>
